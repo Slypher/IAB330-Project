@@ -1,0 +1,2 @@
+android.app.Application
+LiamInteractivePrototype.Droid.LiamInteractivePrototype.Droid
