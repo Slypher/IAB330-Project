@@ -91,7 +91,7 @@ namespace LiamInteractivePrototype.Droid.Views
             var view = inflater.Inflate(Resource.Layout.RequestTab, container, false);
 
             //n Pending requests
-            string[] requestsList = { "Slade Wilson [10 Minutes ago]", "Time Drake [1 Day ago]" };
+            string[] requestsList = { "Slade Wilson [10 Minutes ago]", "Tim Drake [1 Day ago]" };
 
             // Array adapter
             ArrayAdapter<string> requestsListAdapter =
