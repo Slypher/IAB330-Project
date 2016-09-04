@@ -9,7 +9,7 @@
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText1"
+        android:id="@+id/etMemberSearch"
         android:hint="search"
         android:text=""
         android:inputType="text" />

@@ -63,23 +63,44 @@ namespace LiamInteractivePrototype.Droid.Views
                                         "Samantha Parrington", "Selina Kyle",
                                         "Slade Wilson", "Steven Rogers", "Tim Drake"};
             // Array Adapter
-            ArrayAdapter<string> membersListAdapter = new ArrayAdapter<string>(Activity, Android.Resource.Layout.SimpleListItem1, membersList); ;
+            ArrayAdapter<string> membersListAdapter = 
+                new ArrayAdapter<string>(Activity, Android.Resource.Layout.SimpleListItem1, membersList);
             
             // List view
             membersListView = (ListView)view.FindViewById(Resource.Id.memberListview);
             membersListView.Adapter = membersListAdapter;
 
+            // Search edittext
+            EditText searchBox = (EditText)view.FindViewById(Resource.Id.etMemberSearch);
+            searchBox.TextChanged += (object sender, Android.Text.TextChangedEventArgs e) => {
+                // When text is changed in the search box, update the filter
+                string searchText = searchBox.Text.ToString();
+                membersListAdapter.Filter.InvokeFilter(searchText);
+            };
 
             return view;
         }
     }
 
     class RequestTabFragment : Fragment {
+        public ListView requestsListView;
         public override View OnCreateView(LayoutInflater inflater,
             ViewGroup container, Bundle savedInstanceState) {
             base.OnCreateView(inflater, container, savedInstanceState);
 
             var view = inflater.Inflate(Resource.Layout.RequestTab, container, false);
+
+            //n Pending requests
+            string[] requestsList = { "Slade Wilson [10 Minutes ago]", "Time Drake [1 Day ago]" };
+
+            // Array adapter
+            ArrayAdapter<string> requestsListAdapter =
+                new ArrayAdapter<string>(Activity, Android.Resource.Layout.SimpleListItem1, requestsList);
+
+            // List view
+            requestsListView = (ListView)view.FindViewById(Resource.Id.requestsListView);
+            requestsListView.Adapter = requestsListAdapter;
+
 
             return view;
         }
