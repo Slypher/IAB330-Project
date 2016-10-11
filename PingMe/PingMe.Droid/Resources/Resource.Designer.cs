@@ -111,6 +111,15 @@ namespace PingMe.Droid
 			// aapt resource value: 0x7f040001
 			public const int MvxBindingTagUnique = 2130968577;
 			
+			// aapt resource value: 0x7f040002
+			public const int etMemberSearch = 2130968578;
+			
+			// aapt resource value: 0x7f040003
+			public const int memberListview = 2130968579;
+			
+			// aapt resource value: 0x7f040004
+			public const int requestsListView = 2130968580;
+			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -128,7 +137,13 @@ namespace PingMe.Droid
 			public const int FirstView = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int SplashScreen = 2130903041;
+			public const int MembersTab = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int RequestTab = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int SplashScreen = 2130903043;
 			
 			static Layout()
 			{
