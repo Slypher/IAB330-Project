@@ -4,21 +4,5 @@
   <uses-sdk android:minSdkVersion="16" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-  <application android:label="LiamInteractivePrototype.Droid" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
-    <activity android:label="LiamInteractivePrototype.Droid" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.Splash" android:name="md5877a0d4b32572705f6e4e8eaee89d68d.SplashScreen">
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.LAUNCHER" />
-      </intent-filter>
-    </activity>
-    <activity android:label="View for FirstViewModel" android:name="md5c9e36a118f054f7da5aafe81a1b11a6b.FirstView" />
-    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="LiamInteractivePrototype.Droid.LiamInteractivePrototype.Droid.mono.MonoRuntimeProvider.__mono_init__" />
-    <!--suppress ExportedReceiver-->
-    <receiver android:name="mono.android.Seppuku">
-      <intent-filter>
-        <action android:name="mono.android.intent.action.SEPPUKU" />
-        <category android:name="mono.android.intent.category.SEPPUKU.LiamInteractivePrototype.Droid.LiamInteractivePrototype.Droid" />
-      </intent-filter>
-    </receiver>
-  </application>
+  <application android:label="LiamInteractivePrototype.Droid" android:theme="@android:style/Theme.Holo.Light" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">"<activity android:label="LiamInteractivePrototype.Droid" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.Splash" android:name="md5877a0d4b32572705f6e4e8eaee89d68d.SplashScreen"><intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter></activity><activity android:label="View for FirstViewModel" android:name="md5c9e36a118f054f7da5aafe81a1b11a6b.FirstView" /><provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="LiamInteractivePrototype.Droid.LiamInteractivePrototype.Droid.mono.MonoRuntimeProvider.__mono_init__" /><!--suppress ExportedReceiver--><receiver android:name="mono.android.Seppuku"><intent-filter><action android:name="mono.android.intent.action.SEPPUKU" /><category android:name="mono.android.intent.category.SEPPUKU.LiamInteractivePrototype.Droid.LiamInteractivePrototype.Droid" /></intent-filter></receiver></application>
 </manifest>
