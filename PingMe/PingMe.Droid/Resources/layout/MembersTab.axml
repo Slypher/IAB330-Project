@@ -6,17 +6,17 @@
     android:layout_height="fill_parent"
     android:minWidth="25px"
     android:minHeight="25px">
-  <EditText
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/etMemberSearch"
-      android:hint="search"
-      android:text=""
-      android:inputType="text" />
-  <ListView
-      android:minWidth="25px"
-      android:minHeight="25px"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:id="@+id/memberListview" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMemberSearch"
+        android:hint="search"
+        local:MvxBind="Text Search"
+        android:inputType="text" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/memberListview" />
 </LinearLayout>
