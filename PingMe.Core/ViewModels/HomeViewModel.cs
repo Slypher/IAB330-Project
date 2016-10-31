@@ -44,7 +44,7 @@ namespace PingMe.Core.ViewModels {
             }
         }
 
-<<<<<<< HEAD:PingMe.Core/ViewModels/FirstViewModel.cs
+
         private ObservableCollection<GroupMember> currentGroupMembers = new ObservableCollection<GroupMember>();
         public ObservableCollection<GroupMember> CurrentGroupMembers {
             get {
@@ -56,10 +56,7 @@ namespace PingMe.Core.ViewModels {
         }
 
 
-        public FirstViewModel() {
-=======
         public HomeViewModel() {
->>>>>>> cc98a7132dd45707721d679d99985545fe144e29:PingMe.Core/ViewModels/HomeViewModel.cs
 
             // Create example groups:
             groups.Add(new Group("Group 1"));
