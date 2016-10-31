@@ -6,6 +6,10 @@ namespace PingMe.Core.ViewModels {
         string name;
         int id;
 
+        public override string ToString() {
+            return Name + " [" + id.ToString() + "]";
+        }
+
         public int Id {
             get {
                 return id;

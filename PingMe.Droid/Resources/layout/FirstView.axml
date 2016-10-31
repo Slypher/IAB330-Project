@@ -4,10 +4,35 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-  <FrameLayout
-      android:minWidth="25px"
-      android:minHeight="25px"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/fragmentContainer" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMemberSearch"
+        android:hint="search"
+        local:MvxBind="Text Search"
+        android:inputType="text" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.0">
+        <MvxSpinner
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:textSize="50sp"
+            local:MvxItemTemplate="@layout/item_spinner"
+            local:MvxDropDownItemTemplate="@layout/item_spinnerdropdown"
+            local:MvxBind="ItemsSource Groups;SelectedItem SelectedGroup" />
+    </LinearLayout>
+    <MvxListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        local:MvxBind="ItemsSource CurrentGroupMembers;ItemClick SelectMemberCommand" />
 </LinearLayout>

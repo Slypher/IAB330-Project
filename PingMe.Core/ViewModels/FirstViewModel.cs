@@ -19,19 +19,41 @@ namespace PingMe.Core.ViewModels {
         }
 
         // Array containing list of groups
-        ObservableCollection<Group> groups = new ObservableCollection<Group>();
+        private ObservableCollection<Group> groups = new ObservableCollection<Group>();
 
         public ObservableCollection<Group> Groups {
             get {
                 return groups;
             }
             set {
-                if (Groups != value) {
-                    groups = value;
-                    RaisePropertyChanged(() => this.groups);
-                }
+                SetProperty(ref groups, value);
             }
         }
+
+        // Which group is selected in the spinner
+        private Group selectedGroup;
+        public Group SelectedGroup {
+            get {
+                return selectedGroup;
+            }
+            set {
+                selectedGroup = value;
+                RaisePropertyChanged(() => SelectedGroup);
+                // When selected group changes, change the list:
+                CurrentGroupMembers = value.Members;
+            }
+        }
+
+        private ObservableCollection<GroupMember> currentGroupMembers = new ObservableCollection<GroupMember>();
+        public ObservableCollection<GroupMember> CurrentGroupMembers {
+            get {
+                return currentGroupMembers;
+            }
+            set {
+                SetProperty(ref currentGroupMembers, value);
+            }
+        }
+
 
         public FirstViewModel() {
 
@@ -46,7 +68,8 @@ namespace PingMe.Core.ViewModels {
             groups[2].AddGenericPeople();
             groups[2].Members.Add(new GroupMember("Bobby", 12));
 
-            // Setup lists for groups
+            // Make Group 1 the selected group to start with
+            CurrentGroupMembers = Groups[0].Members; 
         }
 
     }

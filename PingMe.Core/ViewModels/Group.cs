@@ -18,6 +18,14 @@ namespace PingMe.Core.ViewModels {
             set { groupName = value; }
         }
 
+        public override string ToString() {
+            return GroupName;
+        }
+
+        public string Caption {
+            get { return groupName; }
+        }
+
 
         public Group(string name) {
             GroupName = name;

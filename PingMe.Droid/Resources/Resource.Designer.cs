@@ -112,16 +112,13 @@ namespace PingMe.Droid
 			public const int MvxBindingTagUnique = 2130968577;
 			
 			// aapt resource value: 0x7f040003
-			public const int etMemberSearch = 2130968579;
+			public const int edittextMemberSearch = 2130968579;
 			
 			// aapt resource value: 0x7f040002
-			public const int fragmentContainer = 2130968578;
+			public const int etMemberSearch = 2130968578;
 			
 			// aapt resource value: 0x7f040004
-			public const int memberListview = 2130968580;
-			
-			// aapt resource value: 0x7f040005
-			public const int requestsListView = 2130968581;
+			public const int requestsListView = 2130968580;
 			
 			static Id()
 			{
@@ -140,13 +137,19 @@ namespace PingMe.Droid
 			public const int FirstView = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int MembersTab = 2130903041;
+			public const int item_spinner = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int RequestTab = 2130903042;
+			public const int item_spinnerdropdown = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int SplashScreen = 2130903043;
+			public const int MembersTab = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int RequestTab = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int SplashScreen = 2130903045;
 			
 			static Layout()
 			{
