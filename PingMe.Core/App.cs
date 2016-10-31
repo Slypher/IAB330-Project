@@ -11,7 +11,7 @@ namespace PingMe.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            RegisterAppStart<ViewModels.FirstViewModel>();
+            RegisterAppStart<ViewModels.HomeViewModel>();
         }
     }
 }

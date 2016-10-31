@@ -3,7 +3,7 @@ using MvvmCross.Core.ViewModels;
 using System.Collections.ObjectModel;
 
 namespace PingMe.Core.ViewModels {
-    public class FirstViewModel : MvxViewModel {
+    public class HomeViewModel : MvxViewModel {
 
         // Binds to the value of the searchbar on MembersTab
         private string search = "";
@@ -33,7 +33,7 @@ namespace PingMe.Core.ViewModels {
             }
         }
 
-        public FirstViewModel() {
+        public HomeViewModel() {
 
             // Create example groups:
             groups.Add(new Group("Group 1"));

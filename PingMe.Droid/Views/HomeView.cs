@@ -7,12 +7,12 @@ using MvvmCross.Droid.Views;
 namespace PingMe.Droid.Views
 {
     [Activity(Label = "View for FirstViewModel")]
-    public class FirstView : MvxActivity
+    public class HomeView : MvxActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            SetContentView(Resource.Layout.FirstView);
+            SetContentView(Resource.Layout.HomeView);
             this.ActionBar.NavigationMode = ActionBarNavigationMode.Tabs;
 
             // Members tab
