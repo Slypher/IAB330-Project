@@ -1,12 +1,15 @@
 using Android.App;
 using Android.OS;
 using Android.Views;
+using MvvmCross.Droid.FullFragging.Fragments;
+using MvvmCross.Droid.Shared.Attributes;
 using MvvmCross.Droid.Views;
-
+using MvvmCross.Binding.Droid.BindingContext;
+using PingMe.Droid.Fragments;
 
 namespace PingMe.Droid.Views
 {
-    [Activity(Label = "View for FirstViewModel")]
+    [Activity(Label = "Ping Me!")]
     public class FirstView : MvxActivity
     {
         protected override void OnCreate(Bundle bundle)
@@ -39,40 +42,10 @@ namespace PingMe.Droid.Views
                 e.FragmentTransaction.Remove(rTab);
             };
             this.ActionBar.AddTab(tab2);
-
-            // Setup list for each group:
-            
-
-
         }
     }
 
-    class MembersTabFragment : Fragment {
+    
 
-        public override View OnCreateView(LayoutInflater inflater,
-            ViewGroup container, Bundle savedInstanceState) {
-            base.OnCreateView(inflater, container, savedInstanceState);
-
-            var view = inflater.Inflate(Resource.Layout.MembersTab, container, false);
-
-
-            
-
-            return view;
-        }
-    }
-
-    class RequestTabFragment : Fragment {
-        public override View OnCreateView(LayoutInflater inflater,
-            ViewGroup container, Bundle savedInstanceState) {
-            base.OnCreateView(inflater, container, savedInstanceState);
-
-            var view = inflater.Inflate(Resource.Layout.RequestTab, container, false);
-
-
-
-            return view;
-
-        }
-    }
+    
 }

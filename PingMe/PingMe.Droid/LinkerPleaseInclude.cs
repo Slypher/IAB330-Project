@@ -63,11 +63,10 @@ namespace PingMe.Droid
             changed.CollectionChanged += (s,e) => { var test = $"{e.Action}{e.NewItems}{e.NewStartingIndex}{e.OldItems}{e.OldStartingIndex}"; };
         }
 
-        public void Include(ICommand command)
-        {
+        public void Include(ICommand command) {
             command.CanExecuteChanged += (s, e) => { if (command.CanExecute(null)) command.Execute(null); };
         }
-        
+
         public void Include(MvvmCross.Platform.IoC.MvxPropertyInjector injector)
         {
             injector = new MvvmCross.Platform.IoC.MvxPropertyInjector ();

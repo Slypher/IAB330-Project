@@ -43,6 +43,8 @@ namespace LiamInteractivePrototype.Droid.Views
             };
             this.ActionBar.AddTab(tab2);
 
+            
+
         }
     }
 
