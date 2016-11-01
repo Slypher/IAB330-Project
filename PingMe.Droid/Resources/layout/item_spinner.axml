@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:local="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    local:MvxBind="Text Caption" />
+    android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px">
+    <TextView xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#004BA0"
+        local:MvxBind="Text Caption" />
+    <TextView xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#212121"
+        local:MvxBind="Text SubCaption" />
+</LinearLayout>

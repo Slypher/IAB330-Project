@@ -25,8 +25,6 @@ namespace PingMe.Core.ViewModels {
 
             filteredGroupMembers = currentGroupMembers;
 
-            Debug.WriteLine("Test");
-            Debug.WriteLine("Length of filtered list" + currentGroupMembers.Count().ToString());
         }
         
         public void FilterMembers() {
@@ -109,10 +107,6 @@ namespace PingMe.Core.ViewModels {
                 RaisePropertyChanged(() => FilteredGroupMembers);
             }
         }
-
-
-
-        
 
     }
 }

@@ -1,0 +1,10 @@
+﻿<resources>
+  <style name="AppMainTheme" parent="AppMainTheme.Base">
+  </style>
+  <!--<style name="MyTheme.Base" parent="android:Theme.Holo.Light">-->
+  <style name="AppMainTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#FCFFFF</item>
+    <item name="colorPrimaryDark">#004BA0</item>
+    <item name="colorAccent">#00B9F2</item>
+  </style>
+</resources>

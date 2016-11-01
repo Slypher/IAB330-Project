@@ -7,9 +7,7 @@ using MvvmCross.Droid.Views;
 namespace PingMe.Droid.Views
 {
     [Activity(Label = "Ping Me!")]
-    public class HomeView : MvxActivity
-
-    {
+    public class HomeView : MvxActivity {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);

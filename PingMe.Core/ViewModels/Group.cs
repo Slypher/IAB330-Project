@@ -25,6 +25,13 @@ namespace PingMe.Core.ViewModels {
         public string Caption {
             get { return groupName; }
         }
+        public string SubCaption {
+            get {
+                int numMem = this.Members.Count;
+                if (numMem == 0) return "No Members";
+                else return numMem.ToString() + " Members";
+            }
+        }
 
 
         public Group(string name) {
