@@ -114,7 +114,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="SplashScreen.cs" />
-    <Compile Include="Views\RequestView.cs" />
+    <Compile Include="Views\SendLocationView.cs" />
     <Compile Include="Views\HomeView.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -142,7 +142,7 @@
     <AndroidResource Include="Resources\layout\toolbar.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\RequestView.axml">
+    <AndroidResource Include="Resources\layout\SendLocationView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

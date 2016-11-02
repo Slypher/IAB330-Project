@@ -8,7 +8,7 @@ using Android.Support.V7.Widget;
 namespace PingMe.Droid.Views
 {
     [Activity(Label = "Ping Me!")]
-    public class RequestView : MvxAppCompatActivity {
+    public class SendLocationView : MvxAppCompatActivity {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);

@@ -1564,11 +1564,20 @@ namespace PingMe.Droid
 			// aapt resource value: 0x7f0b001b
 			public const int beginning = 2131427355;
 			
+			// aapt resource value: 0x7f0b0068
+			public const int button1 = 2131427432;
+			
 			// aapt resource value: 0x7f0b002d
 			public const int buttonPanel = 2131427373;
 			
 			// aapt resource value: 0x7f0b0055
 			public const int cancel_action = 2131427413;
+			
+			// aapt resource value: 0x7f0b0065
+			public const int checkBox1 = 2131427429;
+			
+			// aapt resource value: 0x7f0b0066
+			public const int checkBox2 = 2131427430;
 			
 			// aapt resource value: 0x7f0b003b
 			public const int checkbox = 2131427387;
@@ -1596,6 +1605,9 @@ namespace PingMe.Droid
 			
 			// aapt resource value: 0x7f0b000e
 			public const int disableHome = 2131427342;
+			
+			// aapt resource value: 0x7f0b0067
+			public const int editText1 = 2131427431;
 			
 			// aapt resource value: 0x7f0b0045
 			public const int edit_query = 2131427397;
@@ -1641,6 +1653,12 @@ namespace PingMe.Droid
 			
 			// aapt resource value: 0x7f0b005d
 			public const int line3 = 2131427421;
+			
+			// aapt resource value: 0x7f0b0062
+			public const int linearLayout1 = 2131427426;
+			
+			// aapt resource value: 0x7f0b0063
+			public const int linearLayout2 = 2131427427;
 			
 			// aapt resource value: 0x7f0b000b
 			public const int listMode = 2131427339;
@@ -1771,6 +1789,9 @@ namespace PingMe.Droid
 			// aapt resource value: 0x7f0b0036
 			public const int textSpacerNoButtons = 2131427382;
 			
+			// aapt resource value: 0x7f0b0064
+			public const int textView1 = 2131427428;
+			
 			// aapt resource value: 0x7f0b005a
 			public const int time = 2131427418;
 			
@@ -1780,8 +1801,8 @@ namespace PingMe.Droid
 			// aapt resource value: 0x7f0b0031
 			public const int title_template = 2131427377;
 			
-			// aapt resource value: 0x7f0b0062
-			public const int toolbar = 2131427426;
+			// aapt resource value: 0x7f0b0069
+			public const int toolbar = 2131427433;
 			
 			// aapt resource value: 0x7f0b0030
 			public const int topPanel = 2131427376;
@@ -1954,16 +1975,16 @@ namespace PingMe.Droid
 			public const int RequestTab = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int RequestView = 2130903078;
+			public const int select_dialog_item_material = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int select_dialog_item_material = 2130903079;
+			public const int select_dialog_multichoice_material = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int select_dialog_multichoice_material = 2130903080;
+			public const int select_dialog_singlechoice_material = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int select_dialog_singlechoice_material = 2130903081;
+			public const int SendLocationView = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
 			public const int SplashScreen = 2130903082;

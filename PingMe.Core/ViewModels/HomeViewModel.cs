@@ -110,7 +110,7 @@ namespace PingMe.Core.ViewModels {
 
         public MvxCommand SelectMemberCommand {
             get {
-                return new MvxCommand(() => ShowViewModel<RequestViewModel>());
+                return new MvxCommand(() => ShowViewModel<SendLocationViewModel>());
             }
         }
 
