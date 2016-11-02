@@ -15,7 +15,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/etMemberSearch"
-        android:hint="search"
+        android:hint="Search..."
         local:MvxBind="Text Search"
         android:inputType="text" />
     <LinearLayout

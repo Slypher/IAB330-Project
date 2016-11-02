@@ -7,7 +7,7 @@ namespace PingMe.Core.Classes {
         int id;
 
         public override string ToString() {
-            return Name + " [" + id.ToString() + "]";
+            return Name;
         }
 
         public int Id {

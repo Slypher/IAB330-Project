@@ -41,10 +41,11 @@ namespace PingMe.Core.Classes {
 
         // Test method
         public void AddGenericPeople() {
-            Members.Add(new GroupMember("Dom", 1));
-            Members.Add(new GroupMember("Tony", 2));
-            Members.Add(new GroupMember("George", 3));
-            Members.Add(new GroupMember("Gio", 4));
+            Members.Add(new GroupMember("Dominic Mizzety", 1));
+            Members.Add(new GroupMember("Tony Smith", 2));
+            Members.Add(new GroupMember("George Weasely", 3));
+            Members.Add(new GroupMember("Greg Thomas", 4));
+            Members.Add(new GroupMember("Ellie Gold", 5));
         }
     }
 }
