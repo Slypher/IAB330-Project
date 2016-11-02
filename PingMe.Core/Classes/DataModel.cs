@@ -29,21 +29,31 @@ namespace PingMe.Core.Classes {
         public static void Init() {
             // Add dummy group data
             groups = new ObservableCollection<Group>();
-            groups.Add(new Group("Group 1"));
-            groups.Add(new Group("Group 2"));
-            groups.Add(new Group("Another Group"));
+            groups.Add(new Group("Telstra Accounting"));
+            groups.Add(new Group("Telstra IT"));
+            groups.Add(new Group("Telstra Management"));
+            groups.Add(new Group("Telstra Sales"));
             groups[0].AddGenericPeople();
-            groups[1].Members.Add(new GroupMember("Harold", 7));
-            groups[1].Members.Add(new GroupMember("Jeremiah", 555));
-            groups[2].AddGenericPeople();
-            groups[2].Members.Add(new GroupMember("Bobby", 12));
+            groups[3].AddGenericPeople();
+            groups[0].Members.Add(new GroupMember("Harold Harolding", 6));
+            groups[0].Members.Add(new GroupMember("Stephanie Edgly", 7));
+            groups[0].Members.Add(new GroupMember("Amy Rice", 8));
+            groups[0].Members.Add(new GroupMember("Harry Peterson", 9));
+            groups[1].Members.Add(new GroupMember("Jeremiah Power", 10));
+            groups[1].Members.Add(new GroupMember("Maurice Moss", 11));
+            groups[1].Members.Add(new GroupMember("Roy Trenneman", 12));
+            groups[2].Members.Add(new GroupMember("Bob Scofeld", 13));
+            groups[2].Members.Add(new GroupMember("Melissa Melvin", 14));
+            groups[3].Members.Add(new GroupMember("Gary Brine", 15));
             // Add dummy notification data
             // First notification, right now
-            Notifications.Add(new Notification(groups[1].Members[0], DateTime.Now));
+            Notifications.Add(new Notification(groups[0].Members[1], DateTime.Now));
             // Second, from 14 minutes ago
-            Notifications.Add(new Notification(groups[0].Members[1], DateTime.Now.Subtract(TimeSpan.FromMinutes(14))));
-            Notifications.Add(new Notification(groups[1].Members[1], DateTime.Now.Subtract(TimeSpan.FromHours(7))));
+            Notifications.Add(new Notification(groups[0].Members[3], DateTime.Now.Subtract(TimeSpan.FromMinutes(14))));
+            Notifications.Add(new Notification(groups[1].Members[0], DateTime.Now.Subtract(TimeSpan.FromHours(7))));
+            Notifications.Add(new Notification(groups[0].Members[6], DateTime.Now.Subtract(TimeSpan.FromHours(8))));
+
         }
-        
+
     }
 }
