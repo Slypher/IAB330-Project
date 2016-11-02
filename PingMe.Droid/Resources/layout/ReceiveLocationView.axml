@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <ImageView
-        android:src="@android:assets/map"
+        android:src="@android:drawable/map"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/imageView1" />
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout2">
         <TextView
-            android:text="X Sent you their location"
+            android:text="Sam sent you their location"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/textView5" />
             <TextView
-                android:text="Insert here"
+                android:text="At university currently"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
