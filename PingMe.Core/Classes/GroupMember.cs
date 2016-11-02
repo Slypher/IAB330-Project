@@ -1,6 +1,6 @@
 ﻿
 
-namespace PingMe.Core.ViewModels {
+namespace PingMe.Core.Classes {
     public class GroupMember {
 
         string name;

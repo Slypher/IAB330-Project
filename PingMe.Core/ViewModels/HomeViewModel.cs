@@ -1,5 +1,6 @@
 
 using MvvmCross.Core.ViewModels;
+using PingMe.Core.Classes;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
@@ -9,17 +10,9 @@ namespace PingMe.Core.ViewModels {
     public class HomeViewModel : MvxViewModel {
 
         public HomeViewModel() {
-            
-            // Create example groups:
-            groups.Add(new Group("Group 1"));
-            groups.Add(new Group("Group 2"));
-            groups.Add(new Group("Another Group"));
 
-            groups[0].AddGenericPeople();
-            groups[1].Members.Add(new GroupMember("Harold", 7));
-            groups[1].Members.Add(new GroupMember("Jeremiah", 555));
-            groups[2].AddGenericPeople();
-            groups[2].Members.Add(new GroupMember("Bobby", 12));
+            // Pull groups data
+            this.groups = DataModel.Groups;
 
             // Make Group 1 the selected group to start with
             currentGroupMembers = Groups[0].Members;

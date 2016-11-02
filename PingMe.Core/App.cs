@@ -1,4 +1,5 @@
 using MvvmCross.Platform.IoC;
+using PingMe.Core.Classes;
 
 namespace PingMe.Core
 {
@@ -10,7 +11,7 @@ namespace PingMe.Core
                 .EndingWith("Service")
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
-
+            DataModel.Init();
             RegisterAppStart<ViewModels.HomeViewModel>();
         }
     }

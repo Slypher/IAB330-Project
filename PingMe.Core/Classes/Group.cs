@@ -2,7 +2,7 @@
 using System;
 using System.Collections.ObjectModel;
 
-namespace PingMe.Core.ViewModels {
+namespace PingMe.Core.Classes {
     /*
      * This represents each group in the members page
      */
