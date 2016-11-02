@@ -1480,13 +1480,25 @@ namespace PingMe.Droid
 			public const int abc_textfield_search_material = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int Icon = 2130837579;
-			
-			// aapt resource value: 0x7f02004d
-			public const int notification_template_icon_bg = 2130837581;
+			public const int ic_assignment_late_black_24dp = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int splash = 2130837580;
+			public const int ic_assignment_late_white_24dp = 2130837580;
+			
+			// aapt resource value: 0x7f02004d
+			public const int ic_pingme = 2130837581;
+			
+			// aapt resource value: 0x7f02004e
+			public const int Icon = 2130837582;
+			
+			// aapt resource value: 0x7f020051
+			public const int notification_template_icon_bg = 2130837585;
+			
+			// aapt resource value: 0x7f02004f
+			public const int splash = 2130837583;
+			
+			// aapt resource value: 0x7f020050
+			public const int telstrasplash = 2130837584;
 			
 			static Drawable()
 			{
@@ -1551,6 +1563,9 @@ namespace PingMe.Droid
 			
 			// aapt resource value: 0x7f0b0025
 			public const int action_mode_close_button = 2131427365;
+			
+			// aapt resource value: 0x7f0b006a
+			public const int action_notifications = 2131427434;
 			
 			// aapt resource value: 0x7f0b0026
 			public const int activity_chooser_view_content = 2131427366;
@@ -1972,28 +1987,31 @@ namespace PingMe.Droid
 			public const int notification_template_part_time = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int RequestTab = 2130903077;
+			public const int NotificationsView = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int select_dialog_item_material = 2130903078;
+			public const int RequestTab = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int select_dialog_multichoice_material = 2130903079;
+			public const int select_dialog_item_material = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int select_dialog_singlechoice_material = 2130903080;
+			public const int select_dialog_multichoice_material = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int SendLocationView = 2130903081;
+			public const int select_dialog_singlechoice_material = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int SplashScreen = 2130903082;
+			public const int SendLocationView = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int support_simple_spinner_dropdown_item = 2130903083;
+			public const int SplashScreen = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int toolbar = 2130903084;
+			public const int support_simple_spinner_dropdown_item = 2130903084;
+			
+			// aapt resource value: 0x7f03002d
+			public const int toolbar = 2130903085;
 			
 			static Layout()
 			{
@@ -2001,6 +2019,22 @@ namespace PingMe.Droid
 			}
 			
 			private Layout()
+			{
+			}
+		}
+		
+		public partial class Menu
+		{
+			
+			// aapt resource value: 0x7f0c0000
+			public const int main_menu = 2131492864;
+			
+			static Menu()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Menu()
 			{
 			}
 		}

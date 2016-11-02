@@ -1,0 +1,11 @@
+﻿<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+      xmlns:local="http://schemas.android.com/apk/res-auto">
+
+  <item
+      android:id="@+id/action_notifications"
+      android:icon="@drawable/ic_assignment_late_white_24dp"
+      android:title="Requests"
+      local:showAsAction="ifRoom"/>
+
+
+</menu>
