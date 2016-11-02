@@ -20,12 +20,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout2">
         <TextView
-            android:text="Send x your location"
+            android:text="test"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView1"
-            android:gravity="center" />
+            android:gravity="center"
+            local:MvxBind="Text TitleText" />
     </LinearLayout>
     <LinearLayout
         android:layout_margin="40dip"
@@ -36,7 +37,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout2">
         <CheckBox
-            android:text="Send x my location data"
+            android:text="Send my location data"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/checkBox1" />
@@ -55,6 +56,7 @@
             android:text="Send Location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            local:MvxBind="Click SendLocationCommand"
             android:id="@+id/button1" />
     </LinearLayout>
 </LinearLayout>
