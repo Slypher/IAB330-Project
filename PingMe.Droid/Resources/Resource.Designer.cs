@@ -1486,13 +1486,19 @@ namespace PingMe.Droid
 			public const int ic_assignment_late_white_24dp = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int Icon = 2130837581;
-			
-			// aapt resource value: 0x7f02004f
-			public const int notification_template_icon_bg = 2130837583;
+			public const int ic_pingme = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int splash = 2130837582;
+			public const int Icon = 2130837582;
+			
+			// aapt resource value: 0x7f020051
+			public const int notification_template_icon_bg = 2130837585;
+			
+			// aapt resource value: 0x7f02004f
+			public const int splash = 2130837583;
+			
+			// aapt resource value: 0x7f020050
+			public const int telstrasplash = 2130837584;
 			
 			static Drawable()
 			{
@@ -1966,22 +1972,25 @@ namespace PingMe.Droid
 			public const int RequestTab = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int select_dialog_item_material = 2130903079;
+			public const int RequestView = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int select_dialog_multichoice_material = 2130903080;
+			public const int select_dialog_item_material = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int select_dialog_singlechoice_material = 2130903081;
+			public const int select_dialog_multichoice_material = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int SplashScreen = 2130903082;
+			public const int select_dialog_singlechoice_material = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int support_simple_spinner_dropdown_item = 2130903083;
+			public const int SplashScreen = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int toolbar = 2130903084;
+			public const int support_simple_spinner_dropdown_item = 2130903084;
+			
+			// aapt resource value: 0x7f03002d
+			public const int toolbar = 2130903085;
 			
 			static Layout()
 			{
