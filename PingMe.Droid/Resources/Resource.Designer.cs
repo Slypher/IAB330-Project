@@ -1480,25 +1480,28 @@ namespace PingMe.Droid
 			public const int abc_textfield_search_material = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int ic_assignment_late_black_24dp = 2130837579;
+			public const int emptymap = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int ic_assignment_late_white_24dp = 2130837580;
+			public const int ic_assignment_late_black_24dp = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int ic_pingme = 2130837581;
+			public const int ic_assignment_late_white_24dp = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int Icon = 2130837582;
-			
-			// aapt resource value: 0x7f020051
-			public const int notification_template_icon_bg = 2130837585;
+			public const int ic_pingme = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int splash = 2130837583;
+			public const int Icon = 2130837583;
+			
+			// aapt resource value: 0x7f020052
+			public const int notification_template_icon_bg = 2130837586;
 			
 			// aapt resource value: 0x7f020050
-			public const int telstrasplash = 2130837584;
+			public const int splash = 2130837584;
+			
+			// aapt resource value: 0x7f020051
+			public const int telstrasplash = 2130837585;
 			
 			static Drawable()
 			{
@@ -1828,11 +1831,11 @@ namespace PingMe.Droid
 			// aapt resource value: 0x7f0b0069
 			public const int textView4 = 2131427433;
 			
-			// aapt resource value: 0x7f0b006b
-			public const int textView5 = 2131427435;
-			
 			// aapt resource value: 0x7f0b006c
-			public const int textView6 = 2131427436;
+			public const int textView5 = 2131427436;
+			
+			// aapt resource value: 0x7f0b006b
+			public const int textView6 = 2131427435;
 			
 			// aapt resource value: 0x7f0b006d
 			public const int textView7 = 2131427437;
