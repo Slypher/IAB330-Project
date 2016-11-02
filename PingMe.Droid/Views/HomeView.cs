@@ -5,8 +5,7 @@ using MvvmCross.Droid.Support.V7.AppCompat;
 using Android.Support.V7.Widget;
 using PingMe.Core.ViewModels;
 
-namespace PingMe.Droid.Views
-{
+namespace PingMe.Droid.Views {
     [Activity(Label = "Ping Me!")]
     public class HomeView : MvxAppCompatActivity<HomeViewModel> {
         protected override void OnCreate(Bundle bundle)

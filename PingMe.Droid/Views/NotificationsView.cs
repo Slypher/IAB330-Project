@@ -10,6 +10,7 @@ using Android.Views;
 using MvvmCross.Droid.Support.V7.AppCompat;
 using Android.Support.V7.Widget;
 using PingMe.Core.ViewModels;
+using MvvmCross.Droid.Views;
 
 namespace PingMe.Droid.Views {
     [Activity(Label = "Requests and Notifications")]

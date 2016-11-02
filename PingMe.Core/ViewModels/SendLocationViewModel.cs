@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 
 namespace PingMe.Core.ViewModels {
-    public class RequestViewModel : MvxViewModel {
+    public class SendLocationViewModel : MvxViewModel {
 
-        public RequestViewModel() {
+        public SendLocationViewModel() {
 
 
         }
