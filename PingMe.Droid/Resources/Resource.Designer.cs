@@ -1780,6 +1780,9 @@ namespace PingMe.Droid
 			// aapt resource value: 0x7f0b0031
 			public const int title_template = 2131427377;
 			
+			// aapt resource value: 0x7f0b0062
+			public const int toolbar = 2131427426;
+			
 			// aapt resource value: 0x7f0b0030
 			public const int topPanel = 2131427376;
 			
@@ -1965,28 +1968,15 @@ namespace PingMe.Droid
 			// aapt resource value: 0x7f03002a
 			public const int support_simple_spinner_dropdown_item = 2130903082;
 			
+			// aapt resource value: 0x7f03002b
+			public const int toolbar = 2130903083;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 			}
 			
 			private Layout()
-			{
-			}
-		}
-		
-		public partial class Menu
-		{
-			
-			// aapt resource value: 0x7f0c0000
-			public const int mainmenu = 2131492864;
-			
-			static Menu()
-			{
-				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			}
-			
-			private Menu()
 			{
 			}
 		}

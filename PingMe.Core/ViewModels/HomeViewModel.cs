@@ -8,7 +8,7 @@ namespace PingMe.Core.ViewModels {
     public class HomeViewModel : MvxViewModel {
 
         public HomeViewModel() {
-
+            
             // Create example groups:
             groups.Add(new Group("Group 1"));
             groups.Add(new Group("Group 2"));

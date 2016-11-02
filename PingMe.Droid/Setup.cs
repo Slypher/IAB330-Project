@@ -2,6 +2,8 @@ using Android.Content;
 using MvvmCross.Droid.Platform;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform.Platform;
+using MvvmCross.Binding.Bindings.Target.Construction;
+using MvvmCross.Droid.Support.V7.AppCompat;
 
 namespace PingMe.Droid
 {
@@ -19,6 +21,11 @@ namespace PingMe.Droid
         protected override IMvxTrace CreateDebugTrace()
         {
             return new DebugTrace();
+        }
+
+        protected override void FillTargetFactories(IMvxTargetBindingFactoryRegistry registry) {
+            MvxAppCompatSetupHelper.FillTargetFactories(registry);
+            base.FillTargetFactories(registry);
         }
     }
 }
