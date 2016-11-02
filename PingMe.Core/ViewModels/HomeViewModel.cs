@@ -3,6 +3,7 @@ using MvvmCross.Core.ViewModels;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
+using System.Windows.Input;
 
 namespace PingMe.Core.ViewModels {
     public class HomeViewModel : MvxViewModel {
@@ -25,7 +26,15 @@ namespace PingMe.Core.ViewModels {
 
             filteredGroupMembers = currentGroupMembers;
 
+            // Setup commands
+            NotificationsCommand = new MvxCommand(() => {
+                ShowViewModel<NotificationsViewModel>();
+            });
+
         }
+
+        public ICommand NotificationsCommand { get; private set; }
+
         
         public void FilterMembers() {
             if (string.IsNullOrEmpty(Search)) {
