@@ -16,6 +16,12 @@ namespace PingMe.Core.ViewModels {
         public NotificationsViewModel() {
             // Pull notification data 
             Notifications = DataModel.Notifications;
+            Locations = DataModel.Locations;
+
+            // Setup command
+            LocationSelectedCommand = new MvxCommand(() => {
+                ShowViewModel<ReceiveLocationViewModel>();
+            });
         }
 
 
@@ -31,14 +37,18 @@ namespace PingMe.Core.ViewModels {
             }
         }
 
+        /*
+         * When selecting item from locations
+         */
+         public System.Windows.Input.ICommand LocationSelectedCommand { get; private set; }
+
         private void DoSelectItem(Notification item) {
             int id = DataModel.Notifications.IndexOf(item);
             ShowViewModel<SendLocationViewModel>(new { id = id });
         }
 
-
+        // For requests
         private ObservableCollection<Notification> notifications = new ObservableCollection<Notification>();
-
         public ObservableCollection<Notification> Notifications {
             get {
                 return notifications;
@@ -47,5 +57,17 @@ namespace PingMe.Core.ViewModels {
                 SetProperty(ref notifications, value);
             }
         }
+
+        // For recieved locations
+        private ObservableCollection<Notification> locations = new ObservableCollection<Notification>();
+        public ObservableCollection<Notification> Locations {
+            get {
+                return locations;
+            }
+            set {
+                SetProperty(ref locations, value);
+            }
+        }
+
     }
 }

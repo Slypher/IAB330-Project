@@ -26,6 +26,16 @@ namespace PingMe.Core.Classes {
             set { notifications = value; }
         }
 
+        private static ObservableCollection<Notification> locations = new ObservableCollection<Notification>();
+        public static ObservableCollection<Notification> Locations {
+            get {
+                return locations;
+            }
+            set {
+                locations = value;
+            }
+        }
+
         public static void Init() {
             // Add dummy group data
             groups = new ObservableCollection<Group>();
@@ -47,13 +57,15 @@ namespace PingMe.Core.Classes {
             groups[3].Members.Add(new GroupMember("Gary Brine", 15));
             // Add dummy notification data
             // First notification, right now
-            Notifications.Add(new Notification(groups[0].Members[1], DateTime.Now));
+            Notifications.Add(new Notification(groups[0].Members[1], DateTime.Now, Notification.TYPE_REQUEST));
             // Second, from 14 minutes ago
-            Notifications.Add(new Notification(groups[0].Members[3], DateTime.Now.Subtract(TimeSpan.FromMinutes(14))));
-            Notifications.Add(new Notification(groups[1].Members[0], DateTime.Now.Subtract(TimeSpan.FromHours(7))));
-            Notifications.Add(new Notification(groups[0].Members[6], DateTime.Now.Subtract(TimeSpan.FromHours(8))));
-
+            Notifications.Add(new Notification(groups[0].Members[3], DateTime.Now.Subtract(TimeSpan.FromMinutes(14)), Notification.TYPE_REQUEST));
+            Notifications.Add(new Notification(groups[1].Members[0], DateTime.Now.Subtract(TimeSpan.FromHours(7)), Notification.TYPE_REQUEST));
+            Notifications.Add(new Notification(groups[0].Members[6], DateTime.Now.Subtract(TimeSpan.FromHours(8)), Notification.TYPE_REQUEST));
+            Locations.Add(new Notification(groups[0].Members[1], DateTime.Now, Notification.TYPE_LOCATION));
         }
+
+
 
     }
 }

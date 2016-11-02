@@ -8,8 +8,48 @@
         layout="@layout/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-    <MvxListView
-        android:layout_width="fill_parent"
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
-        local:MvxBind="ItemsSource Notifications; ItemClick ItemSelectedCommand" />
+        android:weightSum="2">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/linearLayout1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Requests"
+                android:layout_marginLeft="5dp" />
+            <MvxListView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                local:MvxBind="ItemsSource Notifications; ItemClick ItemSelectedCommand" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/linearLayout2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Locations"
+                android:layout_marginLeft="5dp"/>
+            <MvxListView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                local:MvxBind="ItemsSource Locations; ItemClick LocationSelectedCommand" />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

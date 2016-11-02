@@ -12,6 +12,13 @@ namespace PingMe.Core.Classes {
      */
     public class Notification {
 
+        public const int TYPE_REQUEST = 0;
+        public const int TYPE_LOCATION = 1;
+
+        private int notificationType;
+        public int NotificationType { get { return notificationType; } set { notificationType = value; } }
+
+
         private GroupMember sender;
         public GroupMember Sender { get { return sender; } set { sender = value; } }
 
@@ -19,16 +26,23 @@ namespace PingMe.Core.Classes {
         public DateTime Date { get { return date; } set { date = value; } }
 
 
-        public Notification(GroupMember sender, DateTime date) {
+        public Notification(GroupMember sender, DateTime date, int notiType) {
             Sender = sender;
             if (date == null)
                 Date = DateTime.Now;
             else
                 Date = date;
-           
+            NotificationType = notiType;
         }
 
         public override string ToString() {
+            string startString = "";
+            if (NotificationType == Notification.TYPE_LOCATION) {
+                startString = "Location sent from: ";
+            } else if (NotificationType == Notification.TYPE_REQUEST) {
+                startString = "Location request from: ";
+            }
+            // Make a fancy string
             string timeSince = "";
             TimeSpan ts = DateTime.Now.Subtract(Date);
             if (ts.TotalMinutes < 5) {
@@ -40,7 +54,7 @@ namespace PingMe.Core.Classes {
             } else {
                 timeSince = Date.ToString();
             }
-            return ("Location request from: " + sender.Name + " [" + timeSince + "]");
+            return (startString + sender.Name + " [" + timeSince + "]");
         }
     }
 }

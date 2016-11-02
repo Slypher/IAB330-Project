@@ -1663,8 +1663,8 @@ namespace PingMe.Droid
 			// aapt resource value: 0x7f0b0028
 			public const int image = 2131427368;
 			
-			// aapt resource value: 0x7f0b0062
-			public const int imageView1 = 2131427426;
+			// aapt resource value: 0x7f0b0063
+			public const int imageView1 = 2131427427;
 			
 			// aapt resource value: 0x7f0b005f
 			public const int info = 2131427423;
@@ -1678,8 +1678,8 @@ namespace PingMe.Droid
 			// aapt resource value: 0x7f0b0061
 			public const int linearLayout1 = 2131427425;
 			
-			// aapt resource value: 0x7f0b0063
-			public const int linearLayout2 = 2131427427;
+			// aapt resource value: 0x7f0b0062
+			public const int linearLayout2 = 2131427426;
 			
 			// aapt resource value: 0x7f0b0065
 			public const int linearLayout3 = 2131427429;
